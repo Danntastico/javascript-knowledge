@@ -1,5 +1,4 @@
 /**
- * Design pattern that allows data privacy
  * Everything in the inside has access to the data outside
  * Everything on the outer function is accessable  by the inner function
  */
