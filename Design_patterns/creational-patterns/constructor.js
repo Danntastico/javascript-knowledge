@@ -1,29 +1,20 @@
-//Esto es solo azucar sintaticta
-
-// Crear objetos en base a una clase
-//Uso de la palabra reservada new
-// creación de instancia de objetos
-// Copiar propiedades de un objeto en una instancia
-
-//se pueden pasar dependencias o valores en el argumento  constructor -> (p1)
+//This is just sugar syntax
+//You can instantiate your objects with values or dependencies by passing into the constructor arguments.
 class MyClass {
   constructor(p1) {
-    //Constructor, ejecuta metodo constructor
-    this.propiedad = 1; //This hace referencia a la clase o instancia de la clase
+    this.propiedad = p1;
     this.metodo = () => {
-      //This is a methid
+      //This is a method
     };
   }
 }
 
-const instancia = new MyClass();
+const instance = new MyClass('property one'); //Creating an instance of the class and passing a value to the constructor
 
-console.log(instancia);
+//Classic way:
 
-//Metodo antiguo
-
-function miClase() {
-  this.prop = 1;
+function Class2(p1) {
+  this.prop = p1;
   this.met = () => {};
 }
-const instanciaOld = new miClase();
+const instance2 = new Class2('property one');
