@@ -3,6 +3,7 @@
 - [General Info](#info)
 - [Constructor Pattern](#constructor-pattern)
 - [Module Pattern](#module-pattern)
+- [Revealing Module Pattern](#revealing-module-pattern)
 
 ## Info
 
@@ -94,4 +95,20 @@ const module2 = (function (/*Pass optional data for initialization*/) {
     },
   };
 })(/**Optional data*/);
+```
+
+## Revealing Module Pattern
+
+Here we're going to create an IIFE where both public and private APIs will be created.
+
+```javascript
+const moduleR = (function () {
+  let privData = {} //All private info will be encapsulated
+  let getPrivData = function (){
+    return privData;
+  }
+  return {
+    getPrivateData: getPrivData();
+  }
+})()
 ```
