@@ -1,5 +1,9 @@
 # Creational Patterns
 
+- [General Info](#info)
+- [Constructor Pattern](#constructor-pattern)
+- [Module Pattern](#module-pattern)
+
 ## Info
 
 **Main Idea:** Object creation.
