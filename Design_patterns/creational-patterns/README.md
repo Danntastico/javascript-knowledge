@@ -29,7 +29,7 @@ newObject['val2'] = 'Hot Dog🌭';
 var hotdog = newObject['val2'];
 ```
 
-1. Constructor Pattern
+## Constructor Pattern
 
 ES6 allows a new way for creating objects with the keyword _class_:
 
