@@ -49,3 +49,45 @@ const instance1 = new MyClass('prop1');
 ```
 
 _Easy, isn't it?_
+
+## Module Pattern
+
+**Encapsulation** of private members by providing a public API.
+Allows us to **hide** the main logic and exposes an interface that is _accessible_ to the rest of our application.
+
+### Object literals
+
+You could declare a Module as an object literal, there, you'll declare:
+
+- Properties
+- Configurations
+- Methods that help us updating the configurations
+
+```javascript
+const module = {
+  prop: 'props',
+  config: {
+    //configurations
+  },
+  setConfig: (data) => {
+    //Updates the configurations
+  },
+};
+```
+
+### IIFE (immediately-invoked function expression)
+
+With an IIFE, you can create a module that will encapsulate the logic. The return value of the IIFE turns to a public API where you can expose logic.
+
+```javascript
+const module2 = (function (/*Pass optional data for initialization*/) {
+  let privData = 'Some that is private';
+
+  return {
+    //Public API
+    getPrivateData: function () {
+      return privData;
+    },
+  };
+})(/**Optional data*/);
+```
