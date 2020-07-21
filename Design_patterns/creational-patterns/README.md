@@ -4,6 +4,7 @@
 - [Constructor Pattern](#constructor-pattern)
 - [Module Pattern](#module-pattern)
 - [Revealing Module Pattern](#revealing-module-pattern)
+- [Useful Links](#useful-links)
 
 ## Info
 
@@ -112,3 +113,7 @@ const moduleR = (function () {
   }
 })()
 ```
+
+## Useful Links
+
+- [Javascript: Module and revealing module patterns](https://riptutorial.com/javascript/example/5379/module-and-revealing-module-patterns)
