@@ -3,6 +3,31 @@
 ## Info
 
 **Main Idea:** Object creation.
+In javascript we have common ways to create objects:
+
+```javascript
+let newObj = {};
+```
+
+```javascript
+let newObj = Object.create(null);
+```
+
+```javascript
+let newObj = new Object();
+```
+
+This ways, combined with the ways to assign values (dot syntax, square bracket syntax, Object.defineProperty, Object.defineProperties) will be such an important and remainder in the next design patterns that we will be exploring.
+
+```javascript
+//Dot syntax
+newObject.val1 = 'Pizza🍕';
+var pizza = newObject.val1; //Pizza!
+
+//Square bracket
+newObject['val2'] = 'Hot Dog🌭';
+var hotdog = newObject['val2'];
+```
 
 1. Constructor Pattern
 
