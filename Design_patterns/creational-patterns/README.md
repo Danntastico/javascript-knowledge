@@ -114,6 +114,11 @@ const moduleR = (function () {
 })()
 ```
 
+## Prototype Pattern
+
+Takes an object that it is already defined and, based on it, create other objects.
+It avoids **code duplicity**.
+
 ## Useful Links
 
 - [Javascript: Module and revealing module patterns](https://riptutorial.com/javascript/example/5379/module-and-revealing-module-patterns)
