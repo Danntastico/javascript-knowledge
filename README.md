@@ -17,7 +17,7 @@ This project is created with:
 
 ## Design Patterns!
 
-- [Creational Pattern](./design_patterns/creational-patterns/README.md)
+- [Creational Pattern](https://github.com/Danntastico/javascript-knowledge/tree/master/Design_patterns/creational-patterns)
 
 This is the basis of a number of other DPs, the concept is very simple: **ways of creating objects**.
 
