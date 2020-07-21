@@ -18,3 +18,14 @@ function Class2(p1) {
   this.met = () => {};
 }
 const instance2 = new Class2('property one');
+
+function Avenger(name, power, team) {
+  this.name = name;
+  this.power = power;
+  this.team = team;
+
+  this.toString = () =>
+    `${this.name} has the ability of ${this.power} and is part of team ${this.team}`;
+}
+
+var spiderMan = new Avenger('Spider man', 'spider sense', 'Iron Man');
